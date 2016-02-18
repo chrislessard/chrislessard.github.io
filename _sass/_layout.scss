@@ -21,8 +21,11 @@
     &,
     &:visited {
         color: $grey-color-dark;
+        text-decoration: none;
     }
+    
 }
+
 
 .site-nav {
     float: right;
@@ -111,6 +114,10 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+}
+
+.social-media-list a, .contact-list a {
+    text-decoration: none;
 }
 
 .contact-list {
@@ -247,4 +254,8 @@
             font-size: 18px;
         }
     }
+}
+
+a {
+    text-decoration: none;
 }
