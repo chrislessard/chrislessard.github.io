@@ -8,8 +8,13 @@
     src: url(AndaleMono.ttf);
 }
 
+@font-face {
+    font-family: Din;
+    src: url(DINRegular.ttf);
+}
+
 // Our variables
-$base-font-family: AndaleMono, Courier;
+$base-font-family: Din, Courier;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -45,8 +50,6 @@ $on-laptop:        800px;
         @content;
     }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

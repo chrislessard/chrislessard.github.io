@@ -1,6 +1,9 @@
 @font-face {
   font-family: AndaleMono;
   src: url(AndaleMono.ttf); }
+@font-face {
+  font-family: Din;
+  src: url(DINRegular.ttf); }
 /**
  * Reset some basic elements
  */
@@ -14,7 +17,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 AndaleMono, Courier;
+  font: 400 16px/1.5 Din, Courier;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
