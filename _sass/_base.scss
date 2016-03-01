@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -186,8 +184,6 @@ pre {
     }
 }
 
-
-
 /**
  * Icons
  */
@@ -211,8 +207,9 @@ pre {
 }
 
 #me {
-    width:45%; 
-    height:45%; 
-    display: inline-block;
+    width:42%;
+    display: inline;;
     float: right;
+    height:42%;
+    margin-left: 30px;
 }
