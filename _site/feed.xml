@@ -5,62 +5,13 @@
     <description></description>
     <link>http://chrislessard.github.io/</link>
     <atom:link href="http://chrislessard.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Mar 2016 14:27:13 -0500</pubDate>
-    <lastBuildDate>Tue, 01 Mar 2016 14:27:13 -0500</lastBuildDate>
+    <pubDate>Thu, 17 Mar 2016 17:42:36 -0400</pubDate>
+    <lastBuildDate>Thu, 17 Mar 2016 17:42:36 -0400</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
-        <title>Basic Formal Logic</title>
-        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-  MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
-&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; async=&quot;&quot; src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML&quot;&gt;
-&lt;/script&gt;
-
-&lt;p&gt;So, with everything in place, we can get into some &lt;em&gt;real&lt;/em&gt; math. These posts I’ll make are meant to help anyone looking to understand basic discreet mathematics get a sense for them, and get some practice.&lt;/p&gt;
-
-&lt;p&gt;Before we can begin to prove anything interesting, we need to formalize your understanding of logic. Most people tend to like this early stage; formal logic is extremely useful for quantifying statements and fairly intuitive to grasp. You’ll come to notice that the concepts introduced here become night in day in any course on Discreet Mathematics, Data Structures or Algorithms, so it’s best to learn them as early as possible. Moreover, it will introduce you to a new way of thinking - one that may be unfamiliar now - but will help define your skills as a computer scientist. The more you program, the more you begin to solve problems “computationally”, i.e. in such a way that you could have a computer solve the problem for you. Computational thinking is the corner stone of computer science - one of our biggest questions to this day asks what can and what cannot be considered in computational terms. Since computers don’t tend to like ambiguity, we’ll need to be more specific in order to make better use of them.&lt;/p&gt;
-
-&lt;p&gt;Like I said, formal logic is extremely useful for “quantifying” statement, but what did I mean by that?&lt;/p&gt;
-
-&lt;p&gt;Human languages (especially English) are notoriously ambiguous. Consider the following headlines:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;“Prostitutes appeal to the Pope”&lt;/li&gt;
-  &lt;li&gt;“Two sisters reunite after 18 years at checkout counter.”&lt;/li&gt;
-  &lt;li&gt;“Panda mating fails: veterinarian takes over”&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Each can be interpreted in more than one way, making it hard to understand exactly what they mean without the help of context or grammar. Perhaps these are particular examples, but they highlight the fact that relying on natural language may not be the best way to describe problems in mathematics.&lt;/p&gt;
-
-&lt;p&gt;Of course, proofs are still written in English, and problems still described with words. We must simply train ourselves to use a more precise subset of our vocabulary: one that can be expressed in purely “logical” terms just as it can be in English.&lt;/p&gt;
-
-&lt;p&gt;To begin, we’ll look at two common quantifiers. A quantifier is as it sounds: something we use to determine a quantity. That may sound funny, I find its best to dive right into some example. Here are by far the two most common ones you will ever use:&lt;/p&gt;
-
-&lt;p&gt;The Universal Quantifier: $\forall$&lt;/p&gt;
-
-&lt;p&gt;The Existential Quantifier: $\exists$&lt;/p&gt;
-</description>
-        <pubDate>Mon, 29 Feb 2016 10:30:42 -0500</pubDate>
-        <link>http://chrislessard.github.io/math/2016/02/29/intro-to-logic.html</link>
-        <guid isPermaLink="true">http://chrislessard.github.io/math/2016/02/29/intro-to-logic.html</guid>
-        
-        
-        <category>math</category>
-        
-      </item>
-    
-      <item>
         <title>Getting Cozy with Proofs</title>
-        <description>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-  MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
-&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; async=&quot;&quot; src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML&quot;&gt;
-&lt;/script&gt;
-
-&lt;p&gt;I remember sitting in my family living room around this time a few years ago, skimming through university websites and trying to decide what I wanted to go off and study. I was pretty convinced that CS was the only way to go at this, but as I began to look into requirements for most of the programs I’d be applying to, I caught on to a trend I wasn’t too keen on: no matter where I looked, CS seemed to require math. Before long, I’d stepped away from the applications and was dropping into links like these:&lt;/p&gt;
+        <description>&lt;p&gt;I remember sitting in my family living room around this time a few years ago, skimming through university websites and trying to decide what I wanted to go off and study. I was pretty convinced that CS was the only way to go at this, but as I began to look into requirements for most of the programs I’d be applying to, I caught on to a trend I wasn’t too keen on: no matter where I looked, CS seemed to require math. Before long, I’d stepped away from the applications and was dropping into links like these:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;

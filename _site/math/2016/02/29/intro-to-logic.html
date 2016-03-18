@@ -77,7 +77,7 @@
 
 <p>So, with everything in place, we can get into some <em>real</em> math. These posts I’ll make are meant to help anyone looking to understand basic discreet mathematics get a sense for them, and get some practice.</p>
 
-<p>Before we can begin to prove anything interesting, we need to formalize your understanding of logic. Most people tend to like this early stage; formal logic is extremely useful for quantifying statements and fairly intuitive to grasp. You’ll come to notice that the concepts introduced here become night in day in any course on Discreet Mathematics, Data Structures or Algorithms, so it’s best to learn them as early as possible. Moreover, it will introduce you to a new way of thinking - one that may be unfamiliar now - but will help define your skills as a computer scientist. The more you program, the more you begin to solve problems “computationally”, i.e. in such a way that you could have a computer solve the problem for you. Computational thinking is the corner stone of computer science - one of our biggest questions to this day asks what can and what cannot be considered in computational terms. Since computers don’t tend to like ambiguity, we’ll need to be more specific in order to make better use of them.</p>
+<p>Before we can begin to prove anything interesting, we need to formalize your understanding of logic. Most people tend to like this early stage; formal logic is extremely useful for making statements more specific, and fairly intuitive to grasp. You’ll come to notice that the concepts introduced here become night and day in any course on Discreet Mathematics, Data Structures or Algorithms, so it’s best to learn them as early as possible. Moreover, these concepts will introduce you to a new way of thinking - one that may be unfamiliar now - but will help define your skills as a computer scientist. The more you program, the more you begin to solve problems “computationally”, i.e. in such a way that you could have a computer solve the problem for you. Computational thinking is the corner stone of computer science - one of our biggest questions to this day asks what can and what cannot be considered in computational terms. Since computers don’t tend to like ambiguity, we’ll need to be more specific in order to make better use of them.</p>
 
 <p>Like I said, formal logic is extremely useful for “quantifying” statement, but what did I mean by that?</p>
 
@@ -93,11 +93,31 @@
 
 <p>Of course, proofs are still written in English, and problems still described with words. We must simply train ourselves to use a more precise subset of our vocabulary: one that can be expressed in purely “logical” terms just as it can be in English.</p>
 
-<p>To begin, we’ll look at two common quantifiers. A quantifier is as it sounds: something we use to determine a quantity. That may sound funny, I find its best to dive right into some example. Here are by far the two most common ones you will ever use:</p>
+<p>To begin, we’ll look at two extremely common quantifiers. A quantifier is as it sounds: something we use to determine a quantity. That may sound funny, I find its best to dive right into some example:</p>
 
-<p>The Universal Quantifier: $\forall$</p>
+<p><strong>The Universal Quantifier:</strong> $\forall$</p>
 
-<p>The Existential Quantifier: $\exists$</p>
+<p>Examples (in english):</p>
+
+<ul>
+  <li><em>For every student</em> in the class, check attendance.</li>
+  <li>Add one <em>to every number</em> in the set.</li>
+  <li><em>Every</em> natural number is either odd or even.</li>
+  <li>Iterate over <em>the entire</em> set.</li>
+</ul>
+
+<p>When you see the $\forall$ symbol, read it literally as “for all”. Given a context, $\forall$ refers to the entirety of a collection. It means that we should consider every part of it, whether it be a set, a collection of objects, etc.</p>
+
+<p><strong>The Existential Quantifier:</strong> $\exists$</p>
+
+<ul>
+  <li><em>There exists</em> a student in the class with brown hair.</li>
+  <li><em>At least one</em> of the numbers in the set will be smaller than 10.</li>
+  <li>Print “ok” to standard input at least “one of” the user’s inputs is a valid english word.</li>
+</ul>
+
+<p>When you see the $\exists$ symbol, read it literally as “there exists”. Some people find this to be a bit confusing, because they think that $\exists$ means “exactly one”. This <strong>isn not</strong> the case; $\exists$ refers to <em>at least</em> one
+of the elements in our context. Think of it like a condition: if I can find at least one element that satisfies my criteria, then the existential quantifier is satisfied.</p>
 
   </div>
 

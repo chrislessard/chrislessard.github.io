@@ -5,13 +5,6 @@ date:   2016-02-16 19:15:42 +0000
 categories: math
 ---
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
-</script>
-
 I remember sitting in my family living room around this time a few years ago, skimming through university websites and trying to decide what I wanted to go off and study. I was pretty convinced that CS was the only way to go at this, but as I began to look into requirements for most of the programs I'd be applying to, I caught on to a trend I wasn't too keen on: no matter where I looked, CS seemed to require math. Before long, I'd stepped away from the applications and was dropping into links like these:
 
 01. [https://www.quora.com/Should-I-pursue-computer-science-if-I-am-bad-at-math](https://www.quora.com/Should-I-pursue-computer-science-if-I-am-bad-at-math)
