@@ -154,11 +154,10 @@ pre {
   display: inline; }
 
 #me {
-  width: 42%;
+  left: 50%;
   display: inline;
-  float: right;
-  height: 42%;
-  margin-left: 30px; }
+  width: 42%;
+  height: 42%; }
 
 /**
  * Site header
