@@ -1,8 +1,14 @@
 ---
 layout: post
+<<<<<<< HEAD
 title:  The Importance of Rigor to Mathematics
 date:   2016-03-24 19:15:42 +0000
 categories: writing
+=======
+title:  Why Rigor Matters to Mathematics
+date:   2016-03-25 14:20:42 +0000
+categories: math
+>>>>>>> 4ef38e93c41b13b33b2b1ca725500be08cfb7314
 ---
 
 <script type="text/x-mathjax-config">
