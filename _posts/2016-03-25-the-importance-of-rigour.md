@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Why Rigor Matters to Mathematics
-date:   2016-03-25 05:25:42 +0000
+date:   2016-03-25 14:20:42 +0000
 categories: math
 ---
 
