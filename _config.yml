@@ -10,7 +10,7 @@ title: home
 email: christian.lessard@mail.utoronto.ca
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://chrislessard.github.io" # the base hostname & protocol for your site
+url: "http://chrislessard.co" # the base hostname & protocol for your site
 github_username:  chrislessard
 
 # Build settings
