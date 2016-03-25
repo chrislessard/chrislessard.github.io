@@ -5,7 +5,7 @@ date:   2016-03-20 01:15:42 +0000
 categories: misc
 ---
 
-This collection consists of various links I've collected over the years, all of which pertain to on CS, tech and design. I visit some of them almost every day, and have gained a lot from others. They've been divided into sections with short descriptions to keep things organized.
+This dump consists of various links I've collected over the years, all of which pertain to on CS, tech and design. I visit some of them almost every day, and have gained a lot from others. They've been divided into sections with short descriptions to keep things organized.
 
 ### General && Misc.
 
@@ -37,11 +37,11 @@ This collection consists of various links I've collected over the years, all of 
 
 1. [Project Euler](https://projecteuler.net/archives)
 
-	A huge collections of mathematical problems that can be solved with computer programs. These can be quite difficult, especially if you try to do better than a brute force solution. Solutions will teach you a *lot* about programming and even more about general mathematics.
+	A huge collections of mathematical problems that can be solved with computer programs. These can be quite difficult, especially if you try to do better than a brute force solution. These will teach you a *lot* about programming and even more about general mathematics.
 
 2. [The Python Challenge](http://www.pythonchallenge.com/)
 
-	A sequence of puzzles designed to be solved with Python. Typically involves looking at the page's source code - you advance levels by modifying the page's URL. Be sure to read the intro documentation before getting started. The challenges are loads of fun and will teach you a lot about Python that you wouldn't otherwise get from an introductory course.
+	A sequence of puzzles designed to be solved with Python. Hints typically come by looking at the page's source code - you advance levels by modifying the pages URL's. Be sure to read the intro documentation before getting started. The challenges are loads of fun and will teach you a lot about Python that you wouldn't otherwise get from an introductory course.
 
 ### Programming Related Tutorials
 1. [JavaScript for Cats](http://jsforcats.com/)
