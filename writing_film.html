@@ -1,0 +1,21 @@
+---
+layout: page
+type: sub
+title: film
+permalink: /film/
+---
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+        {% if post.category == {{page.title}} %}
+        <li>
+            <h2>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
