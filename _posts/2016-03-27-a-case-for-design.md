@@ -2,7 +2,7 @@
 layout: post
 title:  A Case for Design
 date:   2016-03-24 19:15:42 +0000
-categories: design
+category: design
 ---
 
 Design is an entity that has held my attention for a number of years, ever since I first saw Gary Hustwits 2009 Documentary *Objectified*. The documentary gives an overview of design's importance in our world, visiting several of the field's greats for their professional input.One of my moments in the film explores the subtle beauty inherant in good design: when it is done properly, virtually no one takes note of it. The audience is introduced to the designers of a potato peeler, whose handle is specifically crafted to aid people with arthritis. Whereas most who would purchase the tool wouldn't think twice about its form, those who suffer from the disability are sure to be grateful for it. This is a real driving point for me: if we want to design successfully, we need to consider the extreme scenarios, and let those in between fall into place naturally.There are, in fact, a few essential ways to approach the question of what constitutes good design. Legendary industrial designer Dieter Ram's, outlines a few of the points he believes to be most important as follows:

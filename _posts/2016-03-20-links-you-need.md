@@ -2,7 +2,7 @@
 layout: post
 title:  Links You Need
 date:   2016-03-20 01:15:42 +0000
-categories: misc
+category: misc
 ---
 
 This dump consists of various links I've collected over the years, all of which pertain to on CS, tech and design. I visit some of them almost every day, and have gained a lot from others. They've been divided into sections with short descriptions to keep things organized.

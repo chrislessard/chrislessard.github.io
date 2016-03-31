@@ -26,7 +26,6 @@
 
 }
 
-
 .site-nav {
     float: right;
     line-height: 56px;
@@ -95,6 +94,36 @@
     }
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: $background-color;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    background-color: $background-color;
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .
+dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 
 /**

@@ -2,7 +2,7 @@
 layout: post
 title:  Vaporwave - Virtual Elevators to the New Offices of Remix Culture
 date:   2016-02-24 01:15:42 +0000
-categories: misc
+category: music
 ---
 
 ![go](https://framasphere.org/camo/393c9b1ec3dc08c3ee6c5b62df35b4ea2544510d/687474703a2f2f646f776e6c6f61642e74757866616d696c792e6f72672f6473616c656d2f696d672f323031355f2d5f44656e69735f53616c656d5f2d5f43435f42795f53415f2d5f7661706f7277617665736869745f307830312e706e67)

@@ -2,7 +2,7 @@
 layout: post
 title:  The Importance of Rigor to Mathematics
 date:   2016-03-24 19:15:42 +0000
-categories: math
+category: math
 ---
 
 <script type="text/x-mathjax-config">

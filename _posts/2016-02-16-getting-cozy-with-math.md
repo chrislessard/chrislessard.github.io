@@ -2,7 +2,7 @@
 layout: post
 title:  Getting Cozy with Proofs
 date:   2016-02-16 19:15:42 +0000
-categories: math
+category: math
 ---
 
 I remember sitting in my family living room around this time a few years ago, skimming through university websites and trying to decide what I wanted to go off and study. I was pretty convinced that CS was the only way to go at this, but as I began to look into requirements for most of the programs I'd be applying to, I caught on to a trend I wasn't too keen on: no matter where I looked, CS seemed to require math. Before long, I'd stepped away from the applications and was dropping into links like these:
