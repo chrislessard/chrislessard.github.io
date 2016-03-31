@@ -42,7 +42,7 @@ window.onclick = function(event) {
           <a style="text-decoration:none;" class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% elsif my_page.title == "+writing" and my_page.type == "main"%}
                   <div class="dropdown">
-                    <p onclick="myFunction()" style="text-decoration:none;"" class="page-link dropbtn"">{{ my_page.title }}</a>
+                    <a onclick="myFunction()" href="#" style="text-decoration:none;"" class="page-link dropbtn"">{{ my_page.title }}</a>
                     <div id="myDropdown" class="dropdown-content">
                         {% for sub_page in site.pages %}
                             {% if sub_page.type == "sub"%}
