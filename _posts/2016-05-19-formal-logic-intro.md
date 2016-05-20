@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Lesson 0: Formal Logic
-date:   2016-05-19 19:00:42 +0000
+date:   2016-19-05 19:00:42 +0000
 category: math
 ---
 
