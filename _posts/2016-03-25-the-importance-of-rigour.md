@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  The Importance of Rigor to Mathematics
-date:   2016-03-24 19:15:42 +0000
+title:  The Importance of Rigour to Mathematics
+date:   2016-03-16 19:15:42 +0000
 category: math
 ---
 
