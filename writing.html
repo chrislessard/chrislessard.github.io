@@ -1,9 +1,27 @@
 ---
-layout: page
-title: +writing
+layout: default
+title: writing
 type: main
 permalink: /writing/
+menu-item: t
 ---
+<h1 id="main-title">Hi, I'm Chris Lessard.</h1>
+<h4 id="sub-title">See my:</h4>
+<nav class="nav">
+    <ul>
+        {% for my_page in site.html_pages %}
+            {% if my_page.menu-item == "t" %}
+                <li>
+                    <a class="page-link"
+                    href="{{ my_page.url | prepend: site.baseurl }}">
+                        {{ my_page.title }}
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+        <li><a href="{{site.baseurl}}\resume.pdf">resume</a></li>
+    </ul>
+</nav>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -11,8 +29,14 @@ permalink: /writing/
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+              {{ post.title }}
+          </a>
         </h2>
       </li>
     {% endfor %}
   </ul>
+
+  <a href="{{ site.baseurl }}/index.html"><img src="{{ site.baseurl }}\home.png"/></a>
+  <a href="mailto:christian.lessard@mail.utoronto.ca"><img src="{{ site.baseurl }}\mail.png"/></a>
+  <a href="{{ site.baseurl }}/thanks.html"><img src="{{ site.baseurl }}\heart.png"/></a>

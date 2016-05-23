@@ -1,27 +1,53 @@
 ---
 layout: default
+title: none
+menu-item: f
 ---
-
 
 <div class="home">
 
-    <div class="intro">
+    <h1 id="main-title">Hi, I'm Chris Lessard</h1>
+    <h4 id="sub-title">See my:</h4>
+    <nav class="nav">
+        <ul>
+            {% for my_page in site.html_pages %}
+                {% if my_page.menu-item == "t" %}
+                    <li>
+                        <a class="page-link"
+                        href="{{ my_page.url | prepend: site.baseurl }}">
+                        {{ my_page.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            <li><a href="resume.pdf">resume</a></li>
+        </ul>
+    </nav>
 
-        <h1 style="text-align:center">Hi, I'm Chris Lessard.</h1>
+    <p>
+        I'm a third year student at the University of Toronto pursuing my
+        B.Sc. in Computer Science. I'm a developer and a tech enthusiast,
+        with long running interests in the media, art, music and education.
+    </p>
 
-        <p> I'm a second year student at the University of Toronto pursuing my
-            B.Sc. in Computer Science. I'm a developer and a tech enthusiast,
-            with long running interests in the media, art, music and education.</p>
+    <p>
+        I was born in Ottawa, having since moved to Toronto for school.
+        I currently work as an intern at
+        <a href="http://www.nrc-cnrc.gc.ca/eng/">Canada's National Research
+        Council</a>, and as an editor for <a href="http://rucs.ca/">RUCS</a>,
+        a publication of the best undergraduate research in Computer Science
+        done at the University of Toronto.
+    </p>
 
-        <p>
-            I was born in Ottawa, having since moved to
-            <a href="https://en.wikipedia.org/wiki/Kensington_Market">
-            </a>Toronto</a> for school. I currently work as an editor for
-            <a href="http://rucs.ca/">RUCS</a>, a publication of the best undergraduate
-            research in Computer Science done at the University of Toronto. </p>
-    
-        <p>
-            Python is my favorite programming language, Arch is my OS of choice. 
-            I do freelance web development upon request. </p>
+    <p>
+        Python is my favorite programming language, and Arch Linux is my OS of
+        choice. I sometimes write music reviews with my friends (link soon),
+        and spend too much of my free time watching
+        <a href="https://www.youtube.com/user/gennarocontaldo">this guy</a>.
+    </p>
+
+    <a href="{{ site.baseurl }}/index.html"><img src="home.png"/></a>
+    <a href="mailto:christian.lessard@mail.utoronto.ca"><img src="mail.png"/></a>
+    <a href="{{ site.baseurl }}/thanks.html"><img src="heart.png"/></a>
+
 
 </div>

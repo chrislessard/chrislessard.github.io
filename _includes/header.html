@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <a style="text-decoration:none;" class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -13,49 +13,12 @@
         </svg>
       </a>
 
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
       <div class="trigger">
         {% for my_page in site.pages %}
-          {% if my_page.title != "+writing" and my_page.type == "main" %}
-          <a style="text-decoration:none;" class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% elsif my_page.title == "+writing" and my_page.type == "main"%}
-                  <div class="dropdown">
-                    <a onclick="myFunction()" href="#" style="text-decoration:none;"" class="page-link dropbtn"">{{ my_page.title }}</a>
-                    <div id="myDropdown" class="dropdown-content">
-                        {% for sub_page in site.pages %}
-                            {% if sub_page.type == "sub"%}
-                                <a href="{{ sub_page.url | prepend: site.baseurl }}">{{sub_page.title}}</a>
-                            {% endif %}
-                        {% endfor %}
-
-                    </div>
-                    </div>
+          {% if my_page.title %}
+          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
-        <a style="text-decoration:none;" class="page-link" href="../resume.pdf">+resume</a>
-
       </div>
     </nav>
 

@@ -1,0 +1,47 @@
+---
+layout: default
+title: thanks
+permalink: thanks
+menu-item: f
+---
+
+<h1 id="main-title">Hi, I'm Chris Lessard.</h1>
+<h4 id="sub-title">See my:</h4>
+
+<nav class="nav">
+    <ul>
+        {% for my_page in site.html_pages %}
+            {% if my_page.menu-item == "t" %}
+                <li>
+                    <a class="page-link"
+                    href="{{ my_page.url | prepend: site.baseurl }}">
+                    {{ my_page.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+        <li><a href="{{site.baseurl}}\resume.pdf">resume</a></li>
+    </ul>
+</nav>
+
+<p>
+    This site wouldn't have been possible without:
+</p>
+<ul>
+    <li>
+        My friend Dan, who introduced me to the internet.
+    </li>
+    <li>
+        Some Random Dude's <a href="http://somerandomdude.com/work/sanscons/">
+        Sanscons</a>.
+    </li>
+    <li>
+        The makers of the <a href="https://jekyllrb.com/">Jekyll</a> framework.
+    </li>
+    <li>
+        The makers of <a href="https://pages.github.com/">Github Pages</a>.
+    </li>
+</ul>
+
+<a href="{{ site.baseurl }}/index.html"><img src="home.png"/></a>
+<a href="mailto:christian.lessard@mail.utoronto.ca"><img src="mail.png"/></a>
+<a href="{{ site.baseurl }}/thanks.html"><img src="heart.png"/></a>

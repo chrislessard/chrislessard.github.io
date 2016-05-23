@@ -8,6 +8,8 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+
+
 /**
  * Basic styling
  */
@@ -184,6 +186,8 @@ pre {
     }
 }
 
+
+
 /**
  * Icons
  */
@@ -201,15 +205,34 @@ pre {
     }
 }
 
-// Personal stuff
-.intro {
-    display: inline;
+#main-title {
+    font-size: 70px;
+    margin-bottom: 0px;
 }
 
-#me {
-    left: 50%;
-    display:inline;
+#sub-title {
+    display: inline-block;
+}
 
-    width:42%;
-    height:42%;
+nav, .nav, .nav ul {
+    display: inline-block;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0px 6px 0px 8px;
+}
+
+.wrapper {
+    margin-top: 6%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.particles {
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
