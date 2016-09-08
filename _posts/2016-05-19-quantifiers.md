@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Lesson 1 - Quantifiers
-date:   2016-05-18 19:15:42 +0000
+date:   2016-09-01 19:15:42 +0000
 category: math
 ---
 
@@ -11,6 +11,8 @@ category: math
 
  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
  </script>
+ 
+ In this lesson, we'll discuss a concept fundamental to formal logic: quantification.
 
 ### 0. How do you quantify a statement?
 
@@ -27,12 +29,16 @@ That last sentence might be a bit confusing, so let's again clarify with an exam
 
 Each statement uses one of the three "quantifications" mentioned earlier. Don't forget, you have no idea who is in this class, but we nevertheless presented some general information about them.
 
-Consider another, more interesting set: one consisting entirely of even natural numbers. The natural numbers can be (loosely) defined as the set of all positive integers, and zero (depending on who you're asking). An even number is defined as one that can be expressed as a multiple of two. Now have a look at these two sets:
+Consider a slightly more interesting set: one consisting entirely of even natural numbers. The natural numbers can be (loosely) defined as the set of all positive integers, and zero (depending on who you're asking). An even number is defined as one that can be expressed as a multiple of two. 
 
-$$s = {4, 8, 16, 14, 26}$$  
-$$t = {2, 10, 400, 96}$$
+With that understood, have a look at these two sets:
 
-If you think about it, both $s$ and $t$ fit the description of the set we provided earlier. This, however, is exactly the point we're trying to drive home: we don't actually care which one it is! We can discuss properties about the set without needing to know the actual members in it. We'll revisit this concept when we start talking about proofs, you'll get a better idea of this. 
+$$s = \{4, 8, 16, 14, 26\}$$  
+$$t = \{2, 10, 400, 96\}$$
+
+If you think about it, both $s$ and $t$ fit the description of the set we provided earlier. This, however, is exactly the point we're trying to drive home: we don't actually care which one it is! We can discuss properties about the set without needing to know about the actual members contained within it. What's more, if we do derive a general property of a set like this one, we can guarantee that *any* instantiation of the set will satisfy the property.
+
+We'll revisit this concept when we start talking about proofs, you'll get a better idea of this. 
 
 ### 1. Using Symbols
 
@@ -65,13 +71,19 @@ However, if we are given that (b) is true, we cannot necessarily conclude that (
 ### 2. Deducing truth from quantifiers
 There are a few ideas that arise out of these two quantifiers. For the following claims, I'll use this table, giving some info about four people in an office:
 
+---
+---
+
 | Name    | Favourite Programming Language | Likes Math |
 |---------|--------------------------------|------------|
 | Monica  | Python                         | F          |
 | Alex    | Ruby                           | F          |
 | Jeffery | R                              | T          |
 | Lola    | Haskell                        | T          |
-
+   
+---
+---
+Here are a few facts: 
 
 1. Many statements dealing with collections of things use quantifiers.
 
@@ -106,8 +118,8 @@ There are a few ideas that arise out of these two quantifiers. For the following
 
 ### 4. But what about nothingness?? 
 
-You may have noticed that I neglected to offer a symbol describing the concept of "none" or "nothingness". One exists, but it is most commonly used in set theory to describe the "empty set". While the logic we've discussed implicitely uses concepts from Set Theory, we won't typically use the empty set to quantify statements. 
+You may have noticed that I neglected to offer a symbol describing the concept of "none" or "nothingness". One exists, but it is most commonly used in set theory to describe the "empty set". While the logic we've discussed implicitely uses concepts from Set Theory, we won't typically use the empty set to quantify statements in these lessons. 
 
-We'll revisit this idea later. If you're wondering, the symbol looks like this:
+If you're wondering, though, the symbol looks like this:
 
-$$\empty$$
+$$\emptyset$$

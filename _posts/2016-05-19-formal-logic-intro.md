@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  {YOUR TITLE HERE}
-date:   {YYYY-MM-DD HH:MM:SS}
-category: {CATEGORY HERE}
+title: Lesson 0 - Intro to Formal Logic
+date: 2016-09-01
+category: math
 ---
 
 <script type="text/x-mathjax-config">
