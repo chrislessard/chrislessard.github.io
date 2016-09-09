@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Intermission - A lesson about sets and rigour
-date:   2016-09-01 19:15:42 +0000
+date:   2016-09-02 19:15:42 +0000
 category: math
 ---
 
