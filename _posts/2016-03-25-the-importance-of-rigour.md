@@ -22,7 +22,7 @@ There are a few ways to explain the discovery. The most intuitive version descri
 
 The paradox is easy to spot. If the barber shaves himself, then he will have broken his own rule by shaving a man who shaves himself. If he must not shave himself, however, he is then forced by his own rule again to shave himself, as he now fits the criteria. This chain of reasoning can continue endlessly, hence the paradox.
 
-The formal explanation of the problem in only a little bit more involved. Consider the following definition:
+The formal explanation of the problem is only a little bit more involved. Consider the following definition:
 
 <h4 style="text-align:center"> <em> A set is a collection of zero or more distinct objects.</em></h4>
 
@@ -30,11 +30,11 @@ This may seem a bit vague, and it is somewhat intended to be. A set is a collect
 
 We will consider a special variety of sets, ones which contain *themselves* as an element. These sets are called *extraordinary* sets, and resemble the form:
 
-$$A = \{1, 2, 3, ..., A\}$$
+$$A = \{x, y, z, ..., A\}$$
 
 Any other set that does not contain itself as an element is thus called an *ordinary* set. To relate these concepts to the barber analogy, all ordinary sets are equivalent to the men who shave themselves, and all extraordinary sets the men that do not.
 
-Now, we consider one very specific set, who acts as the barber. This set, we'll call it $P$, is defined as the set of all ordinary sets. Much like how we ask who shaves the barber, here we ask ourselves whether $P$ is an ordinary or extraordinary set. With some reasoning, it follows that it can be neither. If $P$ is an ordinary set, then it would need to be included within itself, as $P$ is composed of all ordinary sets. If $P$ became a member of itself, however, it then becomes an extraordinary set, and so we must remove it. This action returns $P$ to the status of ordinary, and so on. This chain of reasoning may continue endlessly, hence the paradox.
+Now, we consider one very specific set, who acts as the barber. This set, we'll call it $P$, is defined as the set of all ordinary sets. Much like how we ask who shaves the barber, here we ask ourselves whether $P$ is an ordinary or extraordinary set. With some reasoning, it follows that it can be neither. If $P$ is an ordinary set, then it would need to be included within itself, as $P$ is composed of all ordinary sets. If $P$ becomes a member of itself, however, it then becomes an extraordinary set, and so we must remove it. This action returns $P$ to the status of ordinary, and so on. This chain of reasoning may continue endlessly, hence the paradox.
 
 Russel wasn't fully aware of the ramifications of his discovery, and was quick to write about it both in his book and in various letters to other mathematicians. Luckily, most work would not be disrupted, as the flaw could be amended which a small change to the definition of a set:
 
