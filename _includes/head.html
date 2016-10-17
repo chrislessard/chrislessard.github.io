@@ -1,0 +1,45 @@
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Chris Lessard</title>
+  <meta name="description" content="I'm a student and developer based in Toronto.">
+  <meta name="author" content="Chris Lessard">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="matrix.js"></script>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script>
+      ids = ['main', 'work', 'writing', 'contact'];
+
+      var hideDivs = function (clickedId) {
+        document.getElementById(clickedId).style.display = "block";
+
+        for (i in ids) {
+          var cur = ids[i];
+          if (cur !== clickedId) {
+            document.getElementById(cur).style.display = "none";
+          }
+        }
+      }
+      </script>
+</head>

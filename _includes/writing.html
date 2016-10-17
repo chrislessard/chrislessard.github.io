@@ -1,0 +1,5 @@
+{% for post in site.posts limit:2 %}
+    <p>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+    </p>
+{% endfor %}

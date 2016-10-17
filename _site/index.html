@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Chris Lessard</title>
+  <meta name="description" content="I'm a student and developer based in Toronto.">
+  <meta name="author" content="Chris Lessard">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="matrix.js"></script>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script>
+      ids = ['main', 'work', 'writing', 'contact'];
+
+      var hideDivs = function (clickedId) {
+        document.getElementById(clickedId).style.display = "block";
+
+        for (i in ids) {
+          var cur = ids[i];
+          if (cur !== clickedId) {
+            document.getElementById(cur).style.display = "none";
+          }
+        }
+      }
+      </script>
+</head>
+
+  <body>
+        <body>
+
+  <div class="container">
+      <div class="row">
+        <!-- desktop/tablet navbar -->
+        <nav class="navbar one columns" id="navbar">
+            <ul style="list-style-type: none">
+                  <li id="main-link"><a href="#main" onclick="hideDivs('main');">home</a></li>
+                  <li><a href="#work" onclick="hideDivs('work');">work</a></li>
+                  <li><a href="#writing" onclick="hideDivs('writing');">writing</a></li>
+                  <li><a href="#contact" onclick="hideDivs('contact');">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nine columns" id='body-content'>
+        <!-- mobile navbar -->
+		<div id="mobile-nav">
+            <ul style="list-style-type: none">
+                  <li id="main-link"><a href="#main" onclick="hideDivs('main');">home</a></li>
+                  <li><a href="#work" onclick="hideDivs('work');">work</a></li>
+                  <li><a href="#writing" onclick="hideDivs('writing');">writing</a></li>
+                  <li><a href="#contact" onclick="hideDivs('contact');">contact</a></li>
+            </ul>
+        </div>
+            <!-- main blurb -->
+            <div id="main" class="w3-animate-opacity">
+              <h2>Hi, I'm Chris Lessard.</h2>
+<p>I'm a third year student at the University of Toronto pursuing my B.Sc. in Computer Science, with particular interests in systems programming, data analytics and machine learning.
+</p>
+
+<p>I'm a developer and a tech enthusiast, with long running interests in media, art, music and education.</p>
+
+            </div>
+
+            <!-- work blurb -->
+            <div id="work" style="display: none" class="w3-animate-opacity">
+                <!--
+<div class="work-entry">
+    <h3 id="position"></h3>
+    <h3 id="location"></h3>
+    <p id="description"></p>
+</div>
+-->
+<div class="work-entry" class="w3-animate-opacity">
+    <small id="position">Editor + Webmaster </small>
+                    <h3 id="location">Review of Undergraduate Computer Science </h3>
+    <p id="description">I work as a webmaster and editor for RUCS, a publication of the best
+      undergraduate research in Computer Science done at the University of Toronto.</p>
+</div>
+
+<div class="work-entry" class="w3-animate-opacity">
+    <h3 id="position">Developer</h3>
+    <h3 id="location">The Beer Store Api</h3>
+    <p id="description">I wrote a RESTful API to help programmers access <a href="http://www.thebeerstore.ca/">The Beer Store</a>'s database.</p>
+</div>
+
+            </div>
+
+            <!-- writing blurb -->
+            <div id="writing" style="display: none" class="w3-animate-opacity"  >
+                
+    <p>
+        <a href="/jekyll/update/2016/10/07/vim.html">Learning better and using Vim</a>
+    </p>
+
+
+            </div>
+
+            <!-- contact blurb -->
+            <div id="contact" class="w3-animate-opacity" style="display: none">
+             <h3>Christian Lessard</h3>
+  <p>116 Nassau Street, Appartment #1, Toronto, ON</p>
+  <p>christian.lessard@mail.utoronto.ca</p>
+  <br />
+  <p>You can view my resume <a href="resume.pdf">here</a>.<p>
+      <br />
+      <p><a id="link" style="color:#2ecc71" href="https://github.com/chrislessard">github</a> <a id="link" style="color:#9b59b6" href="https://www.instagram.com/chris.lessard/">instagram</a></p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<canvas id="canvas"></canvas>
+</body>
+
+  </body>
+</html>

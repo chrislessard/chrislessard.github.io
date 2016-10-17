@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<body>
+
+  <div class="container">
+      <div class="row">
+        <!-- desktop/tablet navbar -->
+        <nav class="navbar one columns" id="navbar">
+            <ul style="list-style-type: none">
+                  <li id="main-link"><a href="#main" onclick="hideDivs('main');">home</a></li>
+                  <li><a href="#work" onclick="hideDivs('work');">work</a></li>
+                  <li><a href="#writing" onclick="hideDivs('writing');">writing</a></li>
+                  <li><a href="#contact" onclick="hideDivs('contact');">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nine columns" id='body-content'>
+        <!-- mobile navbar -->
+		<div id="mobile-nav">
+            <ul style="list-style-type: none">
+                  <li id="main-link"><a href="#main" onclick="hideDivs('main');">home</a></li>
+                  <li><a href="#work" onclick="hideDivs('work');">work</a></li>
+                  <li><a href="#writing" onclick="hideDivs('writing');">writing</a></li>
+                  <li><a href="#contact" onclick="hideDivs('contact');">contact</a></li>
+            </ul>
+        </div>
+            <!-- main blurb -->
+            <div id="main" class="w3-animate-opacity">
+              {% include intro.html %}
+            </div>
+
+            <!-- work blurb -->
+            <div id="work" style="display: none" class="w3-animate-opacity">
+                {% include work.html %}
+            </div>
+
+            <!-- writing blurb -->
+            <div id="writing" style="display: none" class="w3-animate-opacity"  >
+                {% include writing.html %}
+            </div>
+
+            <!-- contact blurb -->
+            <div id="contact" class="w3-animate-opacity" style="display: none">
+             {% include contact.html %}
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<canvas id="canvas"></canvas>
+</body>
