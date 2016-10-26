@@ -1,3 +1,8 @@
+.post-content {
+    overflow: auto;;
+    height: 40vw;
+}
+
 @font-face {
 	font-family: DejaVu;
 	src: url(DejaVuSans.ttf)

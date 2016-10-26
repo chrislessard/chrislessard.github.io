@@ -1,5 +1,42 @@
-{% for post in site.posts limit:2 %}
-    <p>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
-    </p>
+<script>
+/**
+ * Loads an article.
+ */
+ let loadedPost = null;
+
+var load_post = function (title) {
+    loadedPost = title;
+    // Hide links
+    let postLinks = document.querySelectorAll(".post-name");
+    for (var i = 0; i < postLinks.length; i++) {
+	       postLinks[i].style.display = 'None';
+    }
+
+    // Show return bar and article
+    document.getElementById('go-back').style.display = 'block';
+    document.getElementById(title).style.display = 'block';
+}
+
+var hide_post = function () {
+    // Hide the return link and article, restore the post links
+    document.getElementById('go-back').style.display = 'none';
+    document.getElementById(loadedPost).style.display = 'none';
+
+    let postLinks = document.querySelectorAll(".post-name");
+    for (var i = 0; i < postLinks.length; i++) {
+	       postLinks[i].style.display = 'Block';
+    }
+
+    loadedPost = null;
+
+}
+</script>
+
+{% for post in site.posts %}
+        <a id="go-back" href="#" onclick="hide_post()" style="display: none">Back</a>
+        <a class="post-name" href="#" onclick="load_post('{{post.title}}')">{{post.title}}</a>
+        <div class="post-content" id="{{post.title}}" style="display:none">
+            {{post.content}}
+        </div>
+
 {% endfor %}
