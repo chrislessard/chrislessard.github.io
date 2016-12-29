@@ -1,54 +1,46 @@
----
-layout: default
----
+<!DOCTYPE html>
 
-<body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chris Lessard</title>
+      
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="https://use.fontawesome.com/424b1d7adc.js"></script>
+        </script>
+    </head>
+    
+    <body>
+        <p id="title">Hi, I'm Chris Lessard.</p>
+        
+        <p>I'm a developer and a tech enthusiast, with long running interests in media, art, music and education. I'm third year student at the University of Toronto pursuing my B.Sc. in Computer Science, with particular interests in system programming.</p>
 
-  <div class="container">
-      <div class="row">
-        <!-- desktop/tablet navbar -->
-        <nav class="navbar one columns" id="navbar">
-            <ul style="list-style-type: none">
-                  <li id="main-link"><a href="#main" onclick="hideDivs('main');">home</a></li>
-                  <li><a href="#work" onclick="hideDivs('work');">work</a></li>
-                  <li><a href="#writing" onclick="hideDivs('writing');">writing</a></li>
-                  <li><a href="#contact" onclick="hideDivs('contact');">contact</a></li>
-            </ul>
-        </nav>
+        <p>If you need to reach me, you can send me an email <a href="mailto:chrislessard@gmail.com">here</a>. Beyond that, you may be interested in these:</p>
+      
+        <ul>
+            <li>
+                <a href="./assets/chris-lessard-resume.pdf"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                A copy of my resume</li>
+            
+            <li><i class="fa fa-external-link" aria-hidden="true"></i>
+                A list of projects I've worked on</li>
+            
+            <li>
+                <a href="./misc.html"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                A list of albums and films I've enjoyed over the years
+            </li>
+            
+            <li>
+                <a href="./writing.html"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                A list of articles I've written
+            </li>
+        </ul>
 
-        <div class="nine columns" id='body-content'>
-        <!-- mobile navbar -->
-		<div id="mobile-nav">
-            <ul style="list-style-type: none">
-                  <li id="main-link"><a href="#main" onclick="hideDivs('main');">home</a></li>
-                  <li><a href="#work" onclick="hideDivs('work');">work</a></li>
-                  <li><a href="#writing" onclick="hideDivs('writing');">writing</a></li>
-                  <li><a href="#contact" onclick="hideDivs('contact');">contact</a></li>
-            </ul>
-        </div>
-            <!-- main blurb -->
-            <div id="main" class="w3-animate-opacity">
-              {% include intro.html %}
-            </div>
+        <a href="https://github.com/chrislessard"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/chris.lessard/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/cclessard"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="Public Profilehttps://ca.linkedin.com/in/christian-lessard-b53057110"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 
-            <!-- work blurb -->
-            <div id="work" style="display: none" class="w3-animate-opacity">
-                {% include work.html %}
-            </div>
-
-            <!-- writing blurb -->
-            <div id="writing" style="display: none" class="w3-animate-opacity"  >
-                {% include writing.html %}
-            </div>
-
-            <!-- contact blurb -->
-            <div id="contact" class="w3-animate-opacity" style="display: none">
-             {% include contact.html %}
-            </div>
-
-        </div>
-
-    </div>
-</div>
-<canvas id="canvas"></canvas>
-</body>
+    </body>
+</html>

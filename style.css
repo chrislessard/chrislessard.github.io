@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: "Menlo";
+    src: url(assets/Menlo-Regular.ttf);
+}
+
+body{
+    margin: 60px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size:18px;
+    color: #444;
+    padding: 0 15px;
+
+    text-align: justify;
+    font-family: Menlo;
+    font-size: 1rem;
+    text-rendering: geometricPrecision;
+}
+
+a {text-decoration: none; color: blueviolet}
+
+ul {list-style-type: none}
+
+#title {margin-bottom: 0}
