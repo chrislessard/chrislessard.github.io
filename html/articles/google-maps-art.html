@@ -1,0 +1,157 @@
+<head>
+    <meta charset="utf-8">
+    <title>Google Maps... Censors Art?</title>
+
+    <style>
+        @font-face {
+            font-family: "FONT";
+            src: url(../../assets/OpenSans-Light.ttf);
+        }
+
+        #title {
+            font-size: 25px;
+        }
+
+        body {
+            margin: 40px auto;
+            max-width: 915px;
+            line-height: 1.7;
+            color: #444;
+            padding: 0 15px;
+
+            font-family: FONT;
+            font-size: 20px;
+            text-rendering: geometricPrecision;
+        }
+
+        @media only screen and (max-device-width : 680px) {
+            #title {
+                text-align: center;
+                font-size: 30px;
+            }
+
+            body {
+                max-width: 680px;
+
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: blueviolet
+        }
+
+        ul {
+            list-style-type: none
+        }
+
+        #title {
+            margin-bottom: 0
+        }
+    </style>
+    <script src="https://use.fontawesome.com/424b1d7adc.js"></script>
+</head>
+
+<body>
+    <h1>Google Maps... Censors Art?</h1>
+
+    <p>When passing through the French city of Lyon last summer, I was delighted to learn that it’s home to a collection
+        of enormous Frescos scattered throughout town. My girlfriend and I discovered one on accident and made a point of trying to see as many as we could during our time there. Somehow, we
+        managed to miss probably the city's most famous: the Fresque des Lyonnais located in the 1st arrondissement.
+        It’s a depiction of the Lyon's various historical figures, most of whom are painted out on their balcony.</p>
+
+    <p style="text-align: center">
+        <img src="https://thisislyon.fr/wp-content/uploads/2018/04/lyon-fresque-lyonnais-general.jpg"></img>
+        <br>
+        (source: <a
+            href="https://thisislyon.fr/things-to-do/historical-monuments/la-fresque-des-lyonnais/">https://thisislyon.fr/things-to-do/historical-monuments/la-fresque-des-lyonnais/</a>)
+    </p>
+
+    <p>
+        I was revisiting Lyon (virtually) the other day after reading <a
+            href="https://www.newyorker.com/magazine/2020/04/13/baking-bread-in-lyon">a New Yorker article</a> about the
+        bakery located in
+        the same building as the Fresco. After dropping myself in on Google Maps to take a closer look at the
+        storefront, I decided to continue on a little virtual tour. I soon noticed something strange: Google Maps was
+        blurring the faces of the painting.
+    </p>
+
+    <p style="text-align: center">
+        <img src='../../assets/images/1_blurred_faces.png'>
+    </p>
+
+    <p>
+        At first, this made me laugh - I figured the algorithm Google uses was too smart for its own good. I suppose
+        this isn’t all that odd, the paintings on the city’s frescos tend to be pretty realistic and the buildings
+        themselves often blend into their surroundings.
+    </p>
+
+    <p>I was about to close the tab when I noticed that it didn’t seem to be *that* smart:</p>
+
+    <p style="text-align: center">
+        <img src='../../assets/images/2_non_blurred.png'>
+    </p>
+
+    <p>
+        I started moving the Google camera around to get a closer look, which led to the further realization that Google
+        was actually censoring the faces in what appears to be real time:
+    </p>
+
+    <p style="text-align: center">
+        <img src='../../assets/images/3_lumiere_a.png'>
+    </p>
+
+    <p style="text-align: center">
+        <img src='../../assets/images/4_lumiere_b.png'>
+    </p>
+
+    <p style="text-align: center">
+        <img src='../../assets/images/5_lumiere_c.png'>
+        <br>
+        The Lumière brothers, captured from three adjacent positions
+    </p>
+
+    <p>
+        In fact, I was able to reorient myself such that I could make almost every face on the wall become clear. What
+        still puzzles me is that to my naked eye, none of the changes in perspective really made the faces look any less
+        or more “real”.
+    </p>
+
+    <p>
+        I’m not sure if the face-recognition calculation is actually run on the spot (for performance’s sake, I would
+        guess that it isn’t) but clearly something is going on here. It’s strange. One would assume that if a “person”
+        is identified, their face is blurred no matter what. This doesn’t appear to be true, since its possible to
+        re-orient ones self along the street in order to reveal different faces. Google seems to make each evaluation
+        based solely on the camera's current location and perspective.
+    </p>
+
+    <p>
+        Out of curiosity, I played with some of the pedestrians nearby to see if there was some way to reproduce the
+        results. This was a bit tricky, since advancing the camera even by one unit doesn’t necessarily hold the guarantee
+        that the same pedestrian will still be around.
+    </p>
+        
+    <p style="text-align: center">
+        <img src='../../assets/images/6_man_far.png'>
+        <br>
+    </p>
+
+    <p>
+        Google doesn’t seem to blur this guy until you zoom in a unit closer (I had to manually zoom myself in the above picture to get
+        the shot):
+    </p>
+
+    <p style="text-align: center">
+        <img src='../../assets/images/7_man_close.png'>
+        <br>
+    </p>
+
+    <p>His face is pretty blurry in that first photo anyways, so it's likely that Google is determining whether there is
+        enough information to justify the blur.</p>
+    
+    <p>
+        I didn't play around too much more with it. My guess is that the blurring is correct 99% of the time, when it comes to real humans. Still, it was interesting to get a bit of insight into how (well, when) the blurring is applied. Do I get karma for finding a bug with The Frescos?
+    </p>
+
+    <h4>July 1st, 2020</h4>
+</body>
